@@ -1,0 +1,7 @@
+{
+  "name": "subtrack",
+  "version": "0.2.0",
+  "description": "Logs every paid tool, API and subscription your agents sign up for to your team's Tabwren.",
+  "author": { "name": "Tabwren" },
+  "keywords": ["subscriptions", "spend", "mcp"]
+}

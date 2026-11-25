@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "subtrack": {
+      "type": "http",
+      "url": "${SUBTRACK_URL:-https://tabwren.onrender.com}/api/mcp",
+      "headers": { "Authorization": "Bearer ${SUBTRACK_API_KEY}" }
+    }
+  }
+}
