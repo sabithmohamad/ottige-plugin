@@ -1,9 +1,9 @@
 {
   "mcpServers": {
-    "subtrack": {
+    "ottige": {
       "type": "http",
-      "url": "${SUBTRACK_URL:-https://tabwren.onrender.com}/api/mcp",
-      "headers": { "Authorization": "Bearer ${SUBTRACK_API_KEY}" }
+      "url": "${OTTIGE_URL:-https://ottige.com}/api/mcp",
+      "headers": { "Authorization": "Bearer ${OTTIGE_API_KEY}" }
     }
   }
 }

@@ -5,7 +5,7 @@ description: Use right after you sign up for, start a trial of, upgrade or buy a
 
 # Log subscriptions
 
-The team tracks every paid tool in Tabwren. You log what you sign up for with the `subtrack` MCP tools.
+The team tracks every paid tool in Ottige. You log what you sign up for with the `ottige` MCP tools.
 
 ## When
 

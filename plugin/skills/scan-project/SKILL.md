@@ -1,12 +1,12 @@
 ---
 name: scan-project
-description: Use when the user asks to scan a project, repo or codebase for the paid services, APIs and subscriptions it uses, or asks what a project pays for that Tabwren doesn't track yet. Finds them in the code and saves them to Tabwren as drafts for review.
+description: Use when the user asks to scan a project, repo or codebase for the paid services, APIs and subscriptions it uses, or asks what a project pays for that Ottige doesn't track yet. Finds them in the code and saves them to Ottige as drafts for review.
 argument-hint: "[folder]"
 ---
 
 # Scan a project for paid services
 
-Find the paid services a project uses and save them to Tabwren as drafts. A person confirms each draft and adds prices later.
+Find the paid services a project uses and save them to Ottige as drafts. A person confirms each draft and adds prices later.
 
 Folder to scan: $ARGUMENTS (if empty, the root of the current project).
 
@@ -18,7 +18,7 @@ Folder to scan: $ARGUMENTS (if empty, the root of the current project).
    node "${CLAUDE_PLUGIN_ROOT}/scripts/scan.mjs" "<folder>"
    ```
 
-   It prints JSON: `project` (the name to use in Tabwren), and `services`, each with `vendor`, `confidence`, `evidence` and sometimes `billing_cycle: "usage"`.
+   It prints JSON: `project` (the name to use in Ottige), and `services`, each with `vendor`, `confidence`, `evidence` and sometimes `billing_cycle: "usage"`.
    It reads dependency lists, config files and the names of environment variables. It never opens `.env` files, and never prints a value.
 
 2. Check the list before saving anything:
@@ -37,5 +37,5 @@ Folder to scan: $ARGUMENTS (if empty, the root of the current project).
 
 5. Tell the user, in a few lines:
    - how many drafts you saved, and which services were already tracked,
-   - that they can confirm or dismiss the drafts on Tabwren's Subscriptions page, then add prices on the Needs details page,
+   - that they can confirm or dismiss the drafts on Ottige's Subscriptions page, then add prices on the Needs details page,
    - that a scan can't see domains, servers paid by hand, or tools used only in a browser, so they may want to add those themselves.

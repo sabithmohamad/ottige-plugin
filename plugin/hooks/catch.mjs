@@ -40,7 +40,7 @@ print({
   hookSpecificOutput: {
     hookEventName: "PostToolUse",
     additionalContext:
-      `subtrack: this looks like a paid sign-up or purchase: ${describeSignal(signal)}.${saved} ` +
+      `ottige: this looks like a paid sign-up or purchase: ${describeSignal(signal)}.${saved} ` +
       "If something was bought, started as a trial or upgraded, call add_subscription with the vendor, plan, price and project once it is done.",
   },
 });
