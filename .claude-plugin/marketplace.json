@@ -1,14 +1,14 @@
 {
-  "name": "tabwren",
+  "name": "ottige",
   "owner": {
-    "name": "Tabwren"
+    "name": "Ottige"
   },
   "plugins": [
     {
-      "name": "subtrack",
+      "name": "ottige",
       "source": "./plugin",
-      "description": "Logs every paid tool, API and subscription your agents sign up for to your team's Tabwren.",
-      "version": "0.2.0"
+      "description": "Logs every paid tool, API and subscription your agents sign up for to your team's Ottige.",
+      "version": "0.3.0"
     }
   ]
 }

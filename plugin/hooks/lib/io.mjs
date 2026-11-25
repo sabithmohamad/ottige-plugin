@@ -6,9 +6,9 @@ import { join } from "node:path";
 import { stateFileName } from "./signals.mjs";
 
 export const config = {
-  apiKey: process.env.SUBTRACK_API_KEY ?? "",
-  baseUrl: (process.env.SUBTRACK_URL || "https://tabwren.onrender.com").replace(/\/+$/, ""),
-  stateDir: process.env.SUBTRACK_STATE_DIR || join(tmpdir(), "subtrack-hooks"),
+  apiKey: process.env.OTTIGE_API_KEY ?? "",
+  baseUrl: (process.env.OTTIGE_URL || "https://ottige.com").replace(/\/+$/, ""),
+  stateDir: process.env.OTTIGE_STATE_DIR || join(tmpdir(), "ottige-hooks"),
 };
 
 export async function readStdinJson() {

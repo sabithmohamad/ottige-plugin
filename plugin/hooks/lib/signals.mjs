@@ -1,4 +1,4 @@
-// Pure helpers for the subtrack hooks: spot likely purchases in Claude Code tool calls.
+// Pure helpers for the ottige hooks: spot likely purchases in Claude Code tool calls.
 // No network, no files. Everything here is safe to unit test.
 //
 // Privacy rules for anything we keep or send:
@@ -7,7 +7,7 @@
 // - only the first few words of a command, never its arguments.
 
 /** Our own MCP tools, installed by the plugin or added by hand with `claude mcp add`. */
-const OWN_TOOL = /^mcp__(?:plugin_subtrack_)?subtrack__(\w+)$/;
+const OWN_TOOL = /^mcp__(?:plugin_ottige_)?ottige__(\w+)$/;
 const LOGGING_TOOLS = new Set(["add_subscription", "update_subscription", "cancel_subscription"]);
 
 /** @param {string} toolName */
